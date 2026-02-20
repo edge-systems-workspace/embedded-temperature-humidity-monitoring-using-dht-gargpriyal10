@@ -1,4 +1,7 @@
 #include <Arduino.h>
+#include<wire.h>
+#include <Adafruit_SSD1306.h>
+#include <Adafruit_GFX.h>
 /**
  * @file main.ino
  * @brief Embedded Temperature and Humidity Monitoring using DHT11
