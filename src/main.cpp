@@ -19,16 +19,9 @@
 #define OLED_ADDR 0x3c
 Adafruit_SSD1306 display(SCREEN_WIDTH, SCREEN_HEIGHT);
 
-#include <DHT.h>
-
-// TODO 1:
-// Define the DHT data pin (Use digital pin 2)
-
-// TODO 2:
-// Define the DHT sensor type (DHT11)
-
-// TODO 3:
-// Create a DHT object using the defined pin and sensor type
+#define DHTPIN 2
+#define DHTTYPE DHT11
+DHT dht(DHTPIN, DHTTYPE);
 
 void setup() {
 
